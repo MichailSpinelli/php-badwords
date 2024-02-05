@@ -1,5 +1,5 @@
 <?php
-    $paragrafo = $_POST['paragraph'];
+    $paragrafo = $_POST['paragrafo'];
     $badword = $_POST['badword'];
 ?>
 <!DOCTYPE html>
@@ -13,10 +13,9 @@
     <div>
         <p>
             <?php
-                echo $paragrafo;
-                echo $strlen($paragrafo);
-                echo str_replace($badword, '***', $paragrafo);
-                echo strlen(str_replace($badword, '***', $paragrafo));
+                 echo "Paragrafo: " . $paragrafo;
+                 echo "<br>";
+                 echo "Badword: " . str_replace($badword, '***', $badword)
             ?>
             <a href="./index.php">
                 Cambia pagina
